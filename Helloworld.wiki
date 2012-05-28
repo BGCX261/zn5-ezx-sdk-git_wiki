@@ -1,0 +1,21 @@
+#labels Featured
+首先下载整个工程
+
+git clone https://code.google.com/p/zn5-ezx-sdk
+
+然后设定环境变量
+修改env.sh中
+PATH_WORK_ROOT的值为工程所在目录
+
+然后source env.sh
+之后便可以进行交叉编译了
+
+然后可以进入示例程序进行编译
+snake是我写的一个贪吃蛇的小游戏
+编译方法
+cd samples/snake
+tmake snake.pro -o Makefile
+make
+
+将生成的snake.lin拷贝至TF卡中运行即可
+./snake.lin
